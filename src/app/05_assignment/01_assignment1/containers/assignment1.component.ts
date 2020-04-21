@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./assignment1.component.css']
 })
 export class Assignment1Component {
+  myInput = 'You typed => '
 
+  onTypingInput(input: string) {
+    this.myInput += input + ' | '
+  }
+
+  
 }
